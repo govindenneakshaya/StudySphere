@@ -1,0 +1,56 @@
+STUDYSPHERE - LOGIN SYSTEM TEST CASES
+
+TC01
+Scenario: Valid login
+Input Data: Valid username and valid password
+Expected Output: Login successful.
+
+TC02
+Scenario: Empty username
+Input Data: Empty username and valid password
+Expected Output: Username required error.
+
+TC03
+Scenario: Empty password
+Input Data: Valid username and empty password
+Expected Output: Password required error.
+
+TC04
+Scenario: Password shorter than 6 characters
+Input Data: Username: student1, Password: abc12
+Expected Output: Password must contain at least 6 characters.
+
+TC05
+Scenario: Password exactly 6 characters
+Input Data: Username: student1, Password: abc123
+Expected Output: Password length validation passes. Authentication depends on credentials.
+
+TC06
+Scenario: Invalid password
+Input Data: Valid username and incorrect password
+Expected Output: Invalid credentials error.
+
+TC07
+Scenario: Invalid username
+Input Data: Unregistered username and valid-format password
+Expected Output: Invalid credentials error.
+
+TC08
+Scenario: Three consecutive failed attempts
+Input Data: Three consecutive incorrect login attempts
+Expected Output: Account gets locked.
+
+TC09
+Scenario: Login after account lock
+Input Data: Correct credentials after account is locked
+Expected Output: Login denied while account is locked.
+
+TC10
+Scenario: Successful login after two failed attempts
+Input Data: Two incorrect attempts followed by correct credentials
+Expected Output: Login successful and failed-attempt counter resets.
+
+TC11
+Scenario: Password longer than 6 characters
+Input Data: Username: student1, Password: student123
+Expected Output: Password length validation passes. Authentication depends on credentials.
