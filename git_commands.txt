@@ -1,0 +1,71 @@
+1. git init -b main
+   Initializes a Git repository with the main branch.
+
+2. git --version
+   Checks the installed Git version.
+
+3. git config --global user.name "Govindenne Akshaya"
+   Sets the Git username.
+
+4. git config --global user.email "govindenneakshya@gmail.com"
+   Sets the Git email.
+
+5. git status
+   Checks the current repository status.
+
+6. git add index.html about.html
+   Stages the project files.
+
+7. git commit -m "Initial commit: Add StudySphere HTML pages"
+   Creates the first commit.
+
+8. git add index.html
+   Stages the modified homepage.
+
+9. git commit -m "Update StudySphere homepage content"
+   Saves the homepage update.
+
+10. git switch -c feature
+    Creates and switches to the feature branch.
+
+11. git add about.html
+    Stages the feature changes.
+
+12. git commit -m "Add StudySphere features section"
+    Commits the feature changes.
+
+13. git switch main
+    Switches back to the main branch.
+
+14. git merge feature
+    Merges the feature branch into main.
+
+15. git log --oneline --graph --all
+    Displays the commit history.
+
+16. git add .gitignore
+    Stages the ignore configuration.
+
+17. git commit -m "Add gitignore rules for logs and temp folder"
+    Commits the ignore rules.
+
+18. git add demo.txt
+    Stages the temporary demo file.
+
+19. git commit -m "Add temporary demo file"
+    Creates a temporary commit.
+
+20. git revert --no-edit HEAD
+    Reverses the latest commit while preserving history.
+
+21. git remote add origin https://github.com/govindenneakshaya/StudySphere.git
+    Connects the local repository to GitHub.
+
+22. git remote -v
+    Displays the configured remote repository.
+
+23. git push -u origin main
+    Pushes the main branch to GitHub.
+
+24. git push -u origin feature
+    Pushes the feature branch to GitHub.
